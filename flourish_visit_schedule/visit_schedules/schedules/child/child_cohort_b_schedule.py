@@ -96,15 +96,17 @@ child_b_quarterly_schedule_1.add_visit(visit=visit2001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_b_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 crfs_prn=child_crfs_prn, schedule=child_b_quarterly_schedule_1)
+                                 requisitions_prn=None,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_b_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Follow Up Quarterly Schedule
 child_b_fu_quarterly_schedule_1 = Schedule(
-    name='child_b_fu_quart_schedule1',
+    name='child_b_fu_qt_schedule1',
     sequence='4',
     verbose_name='Cohort B Child FU Quarterly Schedule',
-    onschedule_model='flourish_child.onschedulechildcohortbfu',
+    onschedule_model='flourish_child.onschedulechildcohortbfuquart',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
@@ -124,8 +126,11 @@ visit3001 = Visit(
 child_b_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 
 # Generate Quarterly Visits
-schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_b_crf_2001, unschedule_crfs=child_crfs_unscheduled,
-                                 crfs_prn=child_crfs_prn, schedule=child_b_fu_quarterly_schedule_1)
+schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_b_crf_2001,
+                                 crfs_unscheduled=child_crfs_unscheduled,
+                                 requisitions_prn=None,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_b_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule

@@ -1,10 +1,11 @@
-from dateutil.relativedelta import relativedelta
 from edc_visit_schedule import Schedule, Visit as BaseVisit
+
+from dateutil.relativedelta import relativedelta
 
 from ...crfs import child_a_crf_2000, child_birth_crf_2000D, child_a_crf_2001, child_a_crf_3000
 from ...crfs import child_crfs_prn, child_crfs_unscheduled
-from ..schedule_helper import ScheduleHelper
 from ...crfs import child_requisitions
+from ..schedule_helper import ScheduleHelper
 
 
 class Visit(BaseVisit):
@@ -121,15 +122,17 @@ child_a_quarterly_schedule_1.add_visit(visit=visit2001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 crfs_prn=child_crfs_prn, schedule=child_a_quarterly_schedule_1)
+                                 requisitions_prn=None,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_a_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Follow Up Quarterly Schedule
 child_a_fu_quarterly_schedule_1 = Schedule(
-    name='child_a_fu_quart_schedule1',
+    name='child_a_fu_qt_schedule1',
     sequence='4',
     verbose_name='Cohort A Child Quarterly Schedule',
-    onschedule_model='flourish_child.onschedulechildcohortafu',
+    onschedule_model='flourish_child.onschedulechildcohortafuquart',
     offschedule_model='flourish_child.childoffschedule',
     consent_model='flourish_child.childdummysubjectconsent',
     appointment_model='flourish_child.appointment'
@@ -151,7 +154,9 @@ child_a_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 crfs_prn=child_crfs_prn, schedule=child_a_fu_quarterly_schedule_1)
+                                 requisitions_prn=None,
+                                 crfs_prn=child_crfs_prn,
+                                 schedule=child_a_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
 
 # Secondary Aims Schedule
