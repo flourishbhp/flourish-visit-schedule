@@ -13,7 +13,15 @@ crfs_prn_referral = FormsCollection(
     name='child_ref_crf_prn')
 
 crfs_unscheduled = FormsCollection(
-    Crf(show_order=1, model='flourish_child.childcliniciannotes'),
+    Crf(show_order=1, model='flourish_child.childcliniciannotes', required=False),
+    Crf(show_order=2, model='flourish_child.infanthivtestingbirth', required=False),
+    Crf(show_order=3, model='flourish_child.infanthivtestingother', required=False),
+    Crf(show_order=4, model='flourish_child.infanthivtesting18months', required=False),
+    Crf(show_order=5, model='flourish_child.infanthivtestingafterbreastfeeding',
+        required=False),
+    Crf(show_order=6, model='flourish_child.infanthivtestingage6to8weeks',
+        required=False),
+    Crf(show_order=7, model='flourish_child.infanthivtesting9months', required=False),
     name='unscheduled')
 
 child_a_crf_2000 = FormsCollection(
