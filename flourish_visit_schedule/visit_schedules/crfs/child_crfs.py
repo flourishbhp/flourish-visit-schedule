@@ -140,6 +140,7 @@ child_a_crf_2001 = FormsCollection(
     Crf(show_order=30, model='flourish_child.childtbscreening', required=False),
     Crf(show_order=31, model='flourish_child.childtbreferral'),
     Crf(show_order=32, model='flourish_child.childtbreferraloutcome', required=False),
+    Crf(show_order=33, model='flourish_child.childhoodleadexposurerisk', required=False),
     name='child_quarterly_calls')
 
 child_b_crf_2001 = FormsCollection(
@@ -201,6 +202,7 @@ child_a_crf_3000 = FormsCollection(
     Crf(show_order=19, model='flourish_child.childtbreferral', required=False),
     Crf(show_order=20, model='flourish_child.childtbreferraloutcome', required=False),
     Crf(show_order=21, model='flourish_child.childsafistigma', required=False),
+    Crf(show_order=22, model='flourish_child.childhoodleadexposurerisk'),
     name='child_a_follow_up')
 
 child_b_crf_3000 = FormsCollection(
