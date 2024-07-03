@@ -156,7 +156,6 @@ child_b_crf_2001 = FormsCollection(
     Crf(show_order=11, model='flourish_child.childtbreferral', required=False),
     Crf(show_order=12, model='flourish_child.childtbreferraloutcome', required=False),
     Crf(show_order=13, model='flourish_child.childcliniciannotes', required=False),
-
     name='child_quarterly_calls')
 
 child_c_crf_2001 = FormsCollection(
