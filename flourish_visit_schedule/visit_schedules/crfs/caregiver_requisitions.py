@@ -32,13 +32,13 @@ maternal_delivery_requisition = FormsCollection(
         panel=viral_load_panel, required=True, additional=False),
     Requisition(
         show_order=2,
-        panel=breast_milk_panel, required=True, additional=False),
+        panel=breast_milk_panel, required=False, additional=False),
 )
 
 
 brain_ultrasound_requisitions = FormsCollection(
     Requisition(
         show_order=1,
-        panel=breast_milk_panel, required=True, additional=False),
+        panel=breast_milk_panel, required=False, additional=False),
 
 )

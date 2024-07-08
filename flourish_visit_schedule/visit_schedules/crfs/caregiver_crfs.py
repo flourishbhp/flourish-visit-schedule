@@ -154,6 +154,7 @@ crf_2000d = FormsCollection(
         required=False),
     Crf(show_order=16, model='flourish_caregiver.caregiveredinburghpostreferral',
         required=False),
+    Crf(show_order=17, model='flourish_caregiver.breastmilkbirth'),
     name='birth')
 
 crf_2001 = FormsCollection(
@@ -191,7 +192,8 @@ crf_2001 = FormsCollection(
     Crf(show_order=20, model='flourish_caregiver.tbreferralcaregiver'),
     Crf(show_order=21, model='flourish_caregiver.caregivertbreferraloutcome',
         required=False),
-    Crf(show_order=22, model='flourish_caregiver.cliniciannotes', required=False),
+    Crf(show_order=22, model='flourish_caregiver.parentadolrelationshipscale', required=False),
+    Crf(show_order=23, model='flourish_caregiver.cliniciannotes', required=False),
     name='quarterly_calls')
 
 a_crf_3000 = FormsCollection(
@@ -343,3 +345,8 @@ tb_6_months = FormsCollection(
     Crf(show_order=6, model='flourish_caregiver.tbinterviewtranslation', required=False),
     Crf(show_order=7, model='flourish_caregiver.cliniciannotes', required=False),
     name='tb_6_months')
+
+brain_ultrasound_visit = FormsCollection(
+    Crf(show_order=1, model='flourish_caregiver.breastmilk6months'),
+    name='brain_ultrasound_visit'
+)
