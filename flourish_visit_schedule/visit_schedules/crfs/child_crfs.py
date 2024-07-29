@@ -138,10 +138,9 @@ child_a_crf_2001 = FormsCollection(
     Crf(show_order=28, model='flourish_child.infanthivtesting9months', required=False),
     Crf(show_order=29, model='flourish_child.infantarvprophylaxis',
         required=False),
-    Crf(show_order=30, model='flourish_child.childtbscreening',),
-    Crf(show_order=31, model='flourish_child.childtbreferral', required=False),
+    Crf(show_order=30, model='flourish_child.childtbscreening', required=False),
+    Crf(show_order=31, model='flourish_child.childtbreferral'),
     Crf(show_order=32, model='flourish_child.childtbreferraloutcome', required=False),
-    Crf(show_order=33, model='flourish_child.childcliniciannotes', required=False),
     name='child_quarterly_calls')
 
 child_b_crf_2001 = FormsCollection(
