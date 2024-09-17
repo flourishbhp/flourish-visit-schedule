@@ -19,7 +19,8 @@ a_fu_quarterly1_schedule_1 = Schedule(
 a_fu_quarterly1_schedule_1.add_visit(visit=visit3001)
 
 # Generate Quarterly Visits
-schedule_helper = ScheduleHelper(visit=visit3001, crfs=crf_2001,
+schedule_helper = ScheduleHelper(visit=visit3001,
+                                 crfs=crf_2001,
                                  crfs_unscheduled=caregiver_crfs_unscheduled,
                                  requisitions_prn=requisitions_prn,
                                  crfs_prn=caregiver_crfs_prn,
@@ -70,7 +71,8 @@ a_sec_fu_quart1_schedule_1 = Schedule(
 a_sec_fu_quart1_schedule_1.add_visit(visit=visit3001sq)
 
 # Generate SEC-aims quarterly Visits
-schedule_helper = ScheduleHelper(visit=visit3001sq, crfs=crf_2001,
+schedule_helper = ScheduleHelper(visit=visit3001sq,
+                                 crfs=crf_2001,
                                  crfs_unscheduled=caregiver_crfs_unscheduled,
                                  requisitions_prn=requisitions_prn,
                                  crfs_prn=caregiver_crfs_prn,
