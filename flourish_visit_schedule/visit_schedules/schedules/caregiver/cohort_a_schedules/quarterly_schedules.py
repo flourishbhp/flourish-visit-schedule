@@ -18,7 +18,8 @@ a_quarterly1_schedule_1 = Schedule(
 a_quarterly1_schedule_1.add_visit(visit=visit2001)
 
 # Generate Quarterly Visits
-schedule_helper = ScheduleHelper(visit=visit2001, crfs=crf_2001,
+schedule_helper = ScheduleHelper(visit=visit2001,
+                                 crfs=crf_2001,
                                  crfs_prn=caregiver_crfs_prn,
                                  requisitions_prn=requisitions_prn,
                                  crfs_unscheduled=caregiver_crfs_unscheduled,
