@@ -235,11 +235,11 @@ a_crf_3000 = FormsCollection(
     Crf(show_order=22, model='flourish_caregiver.tbreferralcaregiver', required=False),
     Crf(show_order=23, model='flourish_caregiver.caregivertbreferraloutcome',
         required=False),
-    Crf(show_order=25, model='flourish_caregiver.hitsscreening'),
-    Crf(show_order=26, model='flourish_caregiver.briefdangerassessment', required=False),
-    Crf(show_order=27, model='flourish_caregiver.caregiversafistigma', ),
-    Crf(show_order=28, model='flourish_caregiver.caregivercageaid'),
-    Crf(show_order=29, model='flourish_caregiver.childhoodleadexposurerisk'),
+    Crf(show_order=24, model='flourish_caregiver.hitsscreening'),
+    Crf(show_order=25, model='flourish_caregiver.briefdangerassessment', required=False),
+    Crf(show_order=26, model='flourish_caregiver.caregiversafistigma', ),
+    Crf(show_order=27, model='flourish_caregiver.caregivercageaid'),
+    Crf(show_order=28, model='flourish_caregiver.childhoodleadexposurerisk'),
     name='a_follow_up')
 
 b_crf_3000 = FormsCollection(
