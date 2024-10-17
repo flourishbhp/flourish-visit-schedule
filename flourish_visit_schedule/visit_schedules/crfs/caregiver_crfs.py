@@ -16,6 +16,10 @@ crf_pre_consent = FormsCollection(
 
 crfs_unscheduled = FormsCollection(
     Crf(show_order=1, model='flourish_caregiver.cliniciannotes', required=False),
+    Crf(show_order=2, model='flourish_caregiver.caregivertbscreening', required=False),
+    Crf(show_order=3, model='flourish_caregiver.tbreferralcaregiver', required=False),
+    Crf(show_order=4, model='flourish_caregiver.caregivertbreferraloutcome',
+        required=False),
     name='unscheduled')
 
 post_referral_unscheduled = FormsCollection(
