@@ -22,6 +22,9 @@ crfs_unscheduled = FormsCollection(
     Crf(show_order=6, model='flourish_child.infanthivtestingage6to8weeks',
         required=False),
     Crf(show_order=7, model='flourish_child.infanthivtesting9months', required=False),
+    Crf(show_order=8, model='flourish_child.childtbscreening', required=False),
+    Crf(show_order=9, model='flourish_child.childtbreferral', required=False),
+    Crf(show_order=10, model='flourish_child.childtbreferraloutcome', required=False),
     name='unscheduled')
 
 child_a_crf_2000 = FormsCollection(
