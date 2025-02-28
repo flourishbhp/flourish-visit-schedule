@@ -149,7 +149,7 @@ child_a_quarterly_schedule_1.add_visit(visit=visit2001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit2001, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 requisitions_prn=None,
+                                 requisitions_prn=infant_requisitions_prn,
                                  crfs_prn=child_crfs_prn,
                                  schedule=child_a_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
@@ -181,7 +181,7 @@ child_a_fu_quarterly_schedule_1.add_visit(visit=visit3001)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 requisitions_prn=None,
+                                 requisitions_prn=infant_requisitions_prn,
                                  crfs_prn=child_crfs_prn,
                                  schedule=child_a_fu_quarterly_schedule_1)
 schedule_helper.create_quarterly_visits()
@@ -214,7 +214,7 @@ child_a_sec_fu_qt_schedule_1.add_visit(visit=visit3001sq)
 # Generate Quarterly Visits
 schedule_helper = ScheduleHelper(visit=visit3001sq, crfs=child_a_crf_2001,
                                  crfs_unscheduled=child_crfs_unscheduled,
-                                 requisitions_prn=None,
+                                 requisitions_prn=infant_requisitions_prn,
                                  crfs_prn=child_crfs_prn,
                                  schedule=child_a_sec_fu_qt_schedule_1,
                                  postfix='S')
