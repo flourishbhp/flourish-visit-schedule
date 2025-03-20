@@ -203,6 +203,7 @@ crf_2001 = FormsCollection(
     Crf(show_order=23, model='flourish_caregiver.cliniciannotes', required=False),
     Crf(show_order=24, model='flourish_caregiver.childhoodleadexposurerisk',
         required=False),
+    Crf(show_order=25, model='flourish_caregiver.hitspostreferral', required=False),
     name='quarterly_calls')
 
 a_crf_3000 = FormsCollection(
