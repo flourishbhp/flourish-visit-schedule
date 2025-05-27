@@ -5,6 +5,8 @@ crfs_prn = FormsCollection(
         required=False, additional=False),
     Crf(show_order=2, model='flourish_child.childsocialworkreferral',
         required=False, additional=False),
+    Crf(show_order=2, model='flourish_child.childcliniciannotes', required=False,
+        additional=False),
     name='child_crf_prn')
 
 crfs_prn_referral = FormsCollection(
